@@ -189,9 +189,7 @@ button:hover {
   margin-top: 20px;
   color: #d32f2f;
   /* animation: slideIn 1s ease-out 0.5s; */
-  /* Slide-in animation for the message (with delay) */
   animation-fill-mode: both;
-  /* Ensure the final state is applied after animation */
 }
 
 /* Dark mode styles */

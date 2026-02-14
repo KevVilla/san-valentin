@@ -74,14 +74,14 @@ noButton.addEventListener("click", () => {
     noButton.style.transform = "scale(1.2)"; // Example: Scale up the button
     setTimeout(() => {
       noButton.style.transform = "scale(1)"; // Reset the scale
-      isFirstClick = false; // Mark the first click as done
+      isFirstClick = true; // Mark the first click as done
     }, 500); // Duration of the transition
   }
   mouseoverNoButton();
   moveNoButton();
 });
 function mouseoverNoButton() {
-  noButton.addEventListener("mouseover", () => {
+  noButton.addEventListener("touchstart", () => {
     imageContainer.innerHTML = `
     <video autoplay loop muted playsinline  controls>
   <source src="./images/mushu.mp4" type="video/mp4" />
